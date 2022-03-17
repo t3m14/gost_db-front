@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <meta charset="UTF-8">
+  <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+
+  <link href="./reset.css" rel="stylesheet">
+  <link href="./add.css" rel="stylesheet">
+
+  <title>Admin panel</title>
+</head>
+<!-- type number name spheres keywords oks accepted_body accepted_date confirm_date -->
+<body>
+  <div class="wrapper">
+    <form id="main_form" class="main_form">
+      <div class="first-row">
+        <div class="typenumber">
+          <div class="type">
+            <p><b>Тип ГОСТа:</b></p>
+            <input type="text" id="type">
+          </div>
+          <div class="number">
+            <p><b>Номер ГОСТа</b></p>
+            <input type="text" id="number">
+          </div>
+        </div>
+        <div class="name">
+          <p><b>Название документа</b></p>
+          <textarea name="" id="name_textarea" class="name_textarea" cols="30" rows="10"></textarea>
+        </div>
+        <div class="spheres">
+          <p><b>Область применения</b></p>
+          <textarea name="" id="spheres_textarea" class="spheres_textarea" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <div class="second-row">
+        <div class="keywords">
+          <p><b>Ключевые слова:</b></p>
+          <textarea name="" class="keywords_textarea" id="keywords_textarea" cols="30" rows="10"></textarea>
+        </div>
+        <div class="oks">
+          <p><b>Код ОКС/МКС</b></p>
+          <textarea name="" class="oks_textarea" id="oks_textarea" cols="30" rows="10"></textarea>
+        </div>
+        <div class="accepted_body">
+          <p><b>Принявший орган:</b></p>
+          <textarea name="" class="accepted_body_textarea" id="accepted_body_textarea" cols="30" rows="10"></textarea>
+        </div>
+      </div>
+      <div class="third-row">
+        <div class="accepted_date">
+          <p><b>Дата принятия:</b></p>
+          <input type="text" name="" id="accepted_date">
+        </div>
+        <div class="confirm_date">
+          <p><b>Дата вступления в силу:</b></p>
+          <input type="text" name="" id="confirm_date">
+        </div>
+        <button id="confirm-button" class="confirm-button">Добавить новый</button>
+
+      </div>
+    </form>
+  </div>
+  <img src="./bold.png" alt="" class="bold bold-left-top">
+  <img src="./bold.png" alt="" class="bold bold-right-top">
+  <img src="./bold.png" alt="" class="bold bold-left-bottom">
+  <img src="./bold.png" alt="" class="bold bold-right-bottom">
+  <!-- You can also require other files to run in this process -->
+  <script src="./add.js"></script>
+</body>
+
+</html>

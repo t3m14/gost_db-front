@@ -1,0 +1,127 @@
+/* styles.css */
+
+html{
+  height: 100%;
+  overflow: hidden;
+  overflow: hidden;
+}
+body {
+  display: flex;
+  flex-direction: column;
+  /* justify-content: center; */
+  align-items: center;
+  /* max-width: 800px; */
+  padding: 30px 60px;
+  /* background-color: #59A54C; */
+  background: rgb(140,134,134);
+  background: linear-gradient(0deg, rgba(140,134,134,1) 0%, rgba(224,219,216,1) 100%);
+  height: 100%;
+}
+p {
+  color: #718096;
+}
+
+.search {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  height: 50px;
+  background: #E2E8F0;
+  border-radius: 5px;
+}
+.search .search-input{
+  width: 80%;
+  height: 100%;
+  padding: 0 15px;
+  background: #E2E8F0;
+  border-radius: 5px;
+}
+input::placeholder {
+  color: black;
+  font-size: 16px;
+}
+.search .search-btn{
+  width: 20%;
+  height: 80%;
+  margin-right: 10px;
+  cursor: pointer;
+  background-color: #94a583;
+  border-radius: 5px;
+  font-size: 16px;
+  color: #141414;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+
+.add-user-btn{
+  width: 100%;
+  height: 40px;
+  /* background-color: #459138; */
+  background-color: #94a583;
+
+  border: 1px solid black;
+  font-weight: bold;
+  cursor: pointer;
+  border-radius: 5px;
+  margin: 10px 0;
+  color: #141414;
+  font-size: 16px;
+  margin: 30px 0 20px 0;
+  box-shadow: 8px 8px 10px -10px black;
+}
+.table{
+  width: 100%;
+  background-color: #E2E8F0;
+  border-collapse:collapse;
+  border-radius: 5px;
+}
+.table .col-header {
+  font-weight: bold;
+  border: 1px solid black;
+  text-align: center;
+  padding: 7px 0;
+}
+.table .col {
+  background-color: #E2E8F0;
+  text-align: center;
+  border: 1px solid black;
+  margin: 0;
+  height: 40px;
+}
+.table .name {
+  text-align: left;
+}
+
+/* no border */
+
+.no-border-left {
+  border: none;
+  border-top: 1px solid black;
+  border-right: 1px solid black;
+  border-bottom: 1px solid black;
+  border-left: none;
+}
+.no-border-right {
+  border-right: none;
+}
+.bold {
+  border-radius: 50%;
+  position: absolute;
+  width: 40px;
+  height: 40px;
+}
+.bold-left-top {
+  left: 10px;
+  top: 10px;
+}
+.bold-right-top {
+  right: 10px;
+  top: 10px;
+}
+.bold-left-bottom {
+  left: 10px;
+  bottom: 10px;
+}
+.bold-right-bottom {
+  right: 10px;
+  bottom: 10px;
+}

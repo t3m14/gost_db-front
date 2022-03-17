@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <!-- https://developer.mozilla.org/en-US/docs/Web/HTTP/CSP -->
+    <link href="./reset.css" rel="stylesheet">
+    <link href="./style.css" rel="stylesheet">
+
+    <title>Admin panel</title>
+  </head>
+  <body>
+    
+    <div class="search">
+      <input type="text" class="search-input" id="" placeholder="Поиск" />
+      <button class="search-btn">Поиск</button>
+    </div>
+
+    <button id="add-user-btn" class="add-user-btn">Добавить новый</button>
+
+    <table class="table">
+      <thead class="header">
+      <tr>
+        <td class="col-1 col-header">Тип</td>
+        <td class="col-2 col-header">Номер</td>
+        <td class="col-3 col-header">Название</td>
+        <td class="col-4 col-header">Дата</td>
+      </tr>
+    </thead>
+
+    <tbody>
+      <tr>
+        <td class="col col-1 no-border-left">ГОСТ</td>
+        <td class="col col-2">453-45353</td>
+        <td class="col col-3">Название госта</td>
+        <td class="col col-4">15.03.2022</td>
+      </tr>
+      <tr>
+        <td class="col col-1 no-border-left"> </td>
+        <td class="col col-2"> </td>
+        <td class="col col-3"> </td>
+        <td class="col col-4"> </td>
+      </tr>
+    </tbody>
+
+    </table>
+    <img src="./bold.png" alt="" class="bold bold-left-top">
+    <img src="./bold.png" alt="" class="bold bold-right-top">
+    <img src="./bold.png" alt="" class="bold bold-left-bottom">
+    <img src="./bold.png" alt="" class="bold bold-right-bottom">
+    <!-- You can also require other files to run in this process -->
+    <script src="./index.js"></script>
+  </body>
+</html>
